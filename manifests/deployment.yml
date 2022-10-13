@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sridharravinuthalapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sridharravinuthalapipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: sridharravinuthalapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: sridharravinuthalapipelinesjavascriptdocker 
+          image: sriacr.azurecr.io/sridharravinuthalapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
