@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'sridharravinuthalapipelinesjavascriptdocker.default'
+    environment: 'sridharravinuthalapipelinesjavascriptdocker.prod'
     strategy:
       runOnce:
         deploy:
